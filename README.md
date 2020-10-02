@@ -1,6 +1,6 @@
 # Simple Stock Trader
 
-**A Vue.js project made with Vuex, Vue-Router and Vue-Resource**
+**A Vue.js project made with Vuex, Vue-Router, Vue-Resource and Bootstrap**
 
 This little project was implemented as a final project of the
 [Vue - The complete Guide](https://www.udemy.com/course/vuejs-2-the-complete-guide/) course taught by
