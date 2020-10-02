@@ -10,6 +10,7 @@
   "dependencies": {
     "bootstrap": "^3.7.0",
     "vue": "^2.0.1",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.4.5",
     "vuex": "^3.5.1"
   },
