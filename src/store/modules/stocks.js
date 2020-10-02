@@ -18,8 +18,8 @@ const actions = {
     buyStock: ( {commit}, order ) => {
         commit('BUY_STOCK', order);
     },
-    setStocks: ( {commit}) => {
-        commit('SET_STOCKS', stocks)
+    initStocks: ({commit}) => {
+        commit('SET_STOCKS', stocks);
     },
     randomizeStocks: ( {commit}) => {
         commit('RND_STOCKS');
@@ -29,10 +29,9 @@ const actions = {
 
 const getters = {
     stocks: state => {
-        state.stocks;
+        return state.stocks;
     }
-
-}
+};
 
 export default {
     state,

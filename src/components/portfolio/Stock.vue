@@ -16,7 +16,7 @@
                      > 
                 </div>
                 <div class="pull-right">
-                    <button class="btn btn-success" @click="buyStock" :disabled="quantity <= 0 || !Number.isInteger(Number(quantity))">Sell</button>
+                    <button class="btn btn-success" @click="sellStock" :disabled="quantity <= 0 || !Number.isInteger(Number(quantity))">Sell</button>
                 </div>
             </div>
         </div>
@@ -33,16 +33,17 @@ export default {
         }
     },
     methods: {
-        ...mapActions([
-            'sellStock'
-        ]),
+        ...mapActions({
+            placeSellOrder: 'sellStock'
+        }),
         sellStock() {
             const order = {
                 stockId: this.stock.id,
                 stockPrice: this.stock.price,
                 quantity: this.quantity
             }
-            this.sellStock()
+            this.placeSellOrder(order);
+            this.quantity = 0;
         }
     }
 }

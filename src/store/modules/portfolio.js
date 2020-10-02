@@ -37,9 +37,9 @@ const actions = {
 const getters = {
     // state is the overall state of the global store
     // injecting all getters to access the stocks of stocks module
-    stockPortfolio(gState, gGetters) {
-        return gState.stocks.map(stock => {
-            const record = gGetters.stocks.find(element => element.id == stock.id);
+    stockPortfolio(state, getters) {
+        return state.stocks.map(stock => {
+            const record = getters.stocks.find(element => element.id == stock.id);
             return {
                 id: stock.id,
                 quantity: stock.quantity,
