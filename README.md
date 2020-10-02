@@ -2,11 +2,12 @@
 
 **A Vue.js project made with Vuex, Vue-Router and Vue-Resource**
 
-
 This little project was implemented as a final project of the
 [Vue - The complete Guide](https://www.udemy.com/course/vuejs-2-the-complete-guide/) course taught by
 Maximilian Schwarzmüller. It combines the feature set of Vue JS, Vuex, Vue-Router and Vue-Resource.
+
 ---
+
 - You can buy stocks and sell them. If you hit "end day" the stocks will alter their prices. 
 - You can save and load your data (portfolio and stock prices) from an external database.
 
